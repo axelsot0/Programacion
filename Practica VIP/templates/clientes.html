@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+</head>
+<body>
+    <h1><a href="http://127.0.0.1:5000/">Home</a></h1>
+
+
+    
+    <table border="15">
+        <thead>
+            <tr>
+               <th>ID</th>
+               <th>NOMBRE</th>
+               <th>APELLIDO</th>
+               <th>TELEFONO</th>
+               <th>EMAIL</th>
+               <th>CIUDAD</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            {% for usuario in usuario %}
+                <tr>
+                   <td>{{ usuario [0] }}</td>
+                   <td>{{ usuario [1] }}</td>
+                   <td>{{ usuario [2] }}</td>
+                   <td>{{ usuario [3] }}</td>
+                   <td>{{ usuario [4] }}</td>
+                   <td>{{ usuario [5] }}</td>
+                </tr>
+            {% endfor %} 
+        </tbody>
+    </table>
+<h1>{Para buscar por id coloque /(id que desea buscar) Ej: /5.}</h1>
+</body>
+</html>
