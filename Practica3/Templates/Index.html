@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+</head>
+<body>
+    <form>
+        <h1>Log In</h1>
+    {% block contenido%}
+    
+    <label for="Usuario">Usuario</label> <input name="text" id="txt0" type="text" placeholder="Escribe tu usuario"/>
+    <br>
+    
+    <br> 
+    <label for="Correo">Correo Electronico</label> <input name="Correo" id="txt1" type="text" value="@gmail.com"/> 
+    <br>
+
+    <br> 
+    <label for="Clave">Password</label> <input name="1" id="pswrd" type="Password" placeholder="Escribe tu Clave" maxlength="4"/> 
+    <br> 
+     
+  
+
+
+        
+
+    <br>
+    <button type="button"  id= "but" onclick="window.open ('http://127.0.0.1:5000/clientes')"> Log in </button>
+    <br>
+
+
+    {% endblock contenido%}
+
+    </form>
+
+    <h1><a href="http://127.0.0.1:5000/register">Registrarse</a></h1>
+    <h1><a href="http://127.0.0.1:5000/register">Cambiar Clave</a></h1>
+    
+    
+    
+</body>
+</html>
